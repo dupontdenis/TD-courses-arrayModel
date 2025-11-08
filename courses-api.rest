@@ -1,0 +1,19 @@
+### Courses API Test
+
+# Get all courses
+GET http://localhost:3000/api/courses
+
+### Get a single course by ID
+GET http://localhost:3000/api/courses/1
+
+### Add a new course
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{
+  "name": "Sample Course",
+  "info": "This is a test course."
+}
+
+### Delete a course by ID
+DELETE http://localhost:3000/api/courses/1
